@@ -1,20 +1,26 @@
 // Cristiano
-// ICS2O-Unit0-00-HTML
-// Date 2022
+// ICS2O-Unit5-02-HTML
+// April 26 2022
 
 'use strict'
 /**
  * Check service worker.
  */
 if (navigator.serviceWorker) {
-  navigator.serviceWorker.register("/<RESPITORY>/sw.js", {
-    scope: "/<RESPITORY>/",
+  navigator.serviceWorker.register("/ICS2O-Unit5-02-HTML/sw.js", {
+    scope: "/ICS2O-Unit5-02-HTML/",
   })
 }
 
 /**
- * Alerts "Hello, World!"
+ * Checks if the integer the user chose is negative or positive.
  */
 function onButtonClick() {
-  alert("Hello, World!")
+  const integer = document.getElementById("integer").value
+
+  if (integer >= 0) {
+    document.getElementById("result").innerHTML = "<h5>" + integer + " is a positive number.</h5>"
+  } else {
+    document.getElementById("result").innerHTML = "<h5>" + integer + " is a negative number.</h5>"
+  }
 }
