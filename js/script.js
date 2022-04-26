@@ -19,8 +19,8 @@ function onButtonClick() {
   const integer = document.getElementById("integer").value
 
   if (integer >= 0) {
-    document.getElementById("result").innerHTML = "<h5>" + integer + " is a positive number.</h5>"
+    document.getElementById("result").innerHTML = "<h5>" + integer + " is a positive integer.</h5>"
   } else {
-    document.getElementById("result").innerHTML = "<h5>" + integer + " is a negative number.</h5>"
+    document.getElementById("result").innerHTML = "<h5>" + integer + " is a negative integer.</h5>"
   }
 }
